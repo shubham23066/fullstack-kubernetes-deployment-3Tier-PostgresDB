@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout from Git'){
             steps{
-                echo 'git checkout'
+                git branch: 'main', url: 'https://github.com/shubham23066/fullstack-kubernetes-deployment-3Tier-PostgresDB.git'
             }
         }
         stage('Terraform version'){
